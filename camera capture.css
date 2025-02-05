@@ -1,0 +1,28 @@
+<style>
+        body { text-align: center; font-family: Arial, sans-serif; } <!-- Centers the text and applies a font style -->
+        .camera-container { position: relative; display: inline-block; } <!-- Positions the camera container -->
+        video, canvas { width: 100%; max-width: 400px; border-radius: 10px; } <!-- Sets width constraints and rounded corners -->
+        .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 2px dashed red; } <!-- Creates an overlay with dashed red border -->
+        .controls { margin-top: 10px; } <!-- Adds space above the control buttons -->
+        .popup { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: red; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0,0,0,0.5); } <!-- Styles the popup window -->
+        .popup img { width: 100%; max-width: 300px; border-radius: 10px; } <!-- Styles the captured image preview -->
+        .popup button { margin: 10px; padding: 10px; cursor: pointer; } <!-- Styles the confirmation buttons -->
+    </style>
+</head>
+<body>
+    <div class="camera-container"> <!-- Container for the camera feed -->
+        <video id="camera" autoplay></video> <!-- Video element to display live camera feed -->
+        <div class="overlay"></div> <!-- Overlay for the camera feed -->
+    </div>
+    <div class="controls"> <!-- Container for the control buttons -->
+        <button onclick="capturePhoto()">Capture</button> <!-- Button to capture the image -->
+    </div>
+    
+    <div class="popup" id="popup"> <!-- Popup for image preview -->
+        <img id="capturedImage" alt="Captured Image"> <!-- Displays captured image -->
+        <br>
+        <button onclick="savePhoto()">✔</button> <!-- Button to save the captured image -->
+        <button onclick="retakePhoto()">✖</button> <!-- Button to discard and retake the image -->
+    </div>
+    
+    <canvas id="canvas" style="display: none;"></canvas> <!-- Hidden canvas to store the captured image -->
