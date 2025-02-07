@@ -18,7 +18,8 @@ In the below You can check the photos and video demo.
 ![captured_image (5)](https://github.com/user-attachments/assets/45ffae51-222a-4311-b87c-96ab16f2e236)
 ![Screenshot 2025-02-05 152534](https://github.com/user-attachments/assets/19641f27-b740-4aa3-9f96-31ae1a59ee38)
 ![WhatsApp Image 2025-02-05 at 15 24 26_9e1618ca](https://github.com/user-attachments/assets/c9401cb9-fbc0-4ecb-aab7-355bd43187ee) and also shows the the pop up message to your phone in the phone u can acess the both front and back camera captures.
-Video Demos.
+Video Demos.You can the check the ezyZip.mp4 file click on raw file and downlaod it into Your downloads and check the video demo.
+
 
 
 
